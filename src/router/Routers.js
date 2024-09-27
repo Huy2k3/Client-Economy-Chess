@@ -12,7 +12,7 @@ import Register from './../pages/Register';
 import ThankYou from '../pages/ThankYou';
 import About from '../pages/About';
 import Cart from '../pages/Cart';
-
+import CheckOut from '../pages/CheckOut';
 
 const Routers = () => {
   return (
@@ -27,6 +27,7 @@ const Routers = () => {
       <Route path='/thank-you' element={<ThankYou />}/>
       <Route path="/products/search" element={<SearchResultList />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/checkouts" element={<CheckOut />}/>
     </Routes>
   )
 }

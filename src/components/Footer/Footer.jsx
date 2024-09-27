@@ -126,7 +126,7 @@ const Footer = () => {
                   Email:
                 </h6>
 
-                <p className='mb-0'>nqtrung0810@gmail.com</p>
+                <p className='mb-0'>buohuy0201@gmail.com</p>
               </ListGroupItem>
 
               <ListGroupItem className='ps-0 border-0 list-items d-flex items-center gap-3'>
@@ -137,7 +137,7 @@ const Footer = () => {
                   Phone:
                 </h6>
 
-                <p className='mb-0'>+84399667738</p>
+                <p className='mb-0'>+84395357986</p>
               </ListGroupItem>
 
 
@@ -146,7 +146,7 @@ const Footer = () => {
 
           <Col lg='12' className='text-center pt-5'>
             <p className="copyight">
-            &copy; {year} Chess House, design and develop by Trunknq & Huybq, Inc.
+            &copy; {year} Chess House, design and develop by Theanh28 & Huybq, Inc.
               All rights reserved
             </p>
           </Col>

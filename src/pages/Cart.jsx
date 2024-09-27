@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 
 const Cart = () => {
@@ -94,7 +95,9 @@ const Cart = () => {
               placeholder="Add a note to your order"
             ></textarea>
           </div>
-          <button className="w-full bg-[#81B64C] text-white py-2 rounded-lg font-semibold">Checkout</button>
+          <button className="w-full bg-[#81B64C] text-white py-2 rounded-lg font-semibold">
+            <Link className='no-underline text-white' to='/checkouts'>Check Out</Link>
+          </button>
           <div className="mt-4">
             <p className="text-center text-sm font-medium text-gray-700 mb-2">We accept</p>
             <div className="flex justify-center space-x-2 w-[40px] ml-32 ">

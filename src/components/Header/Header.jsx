@@ -64,11 +64,12 @@ const Header = ({onCartIconClick}) => {
   // Kiểm tra xem đường dẫn có bắt đầu bằng "/tours/" không
   const isTourDetailsPage = location.pathname.startsWith("/products/");
   const isCartPage = location.pathname.startsWith("/cart");
+  const isCheckOutPage = location.pathname.startsWith("/checkout")
 
   return (
     <header
       className={`header sticky__header ${
-        isScrolled || isHovered || isTourDetailsPage || isCartPage
+        isScrolled || isHovered || isTourDetailsPage || isCartPage || isCheckOutPage
           ? "scrolled"
           : ""
       }`}

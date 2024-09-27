@@ -12,6 +12,7 @@ import {BrowserRouter} from "react-router-dom";
 import {AuthContextProvider} from "./context/AuthContext";
 import {CartProvider} from "./context/CartContext";
 import {ChatHistoryProvider} from "./context/ChatHistoryContext";
+import { CheckOutContext, CheckOutProvider } from "./context/CheckOutContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,9 +20,11 @@ root.render(
     <AuthContextProvider>
       <CartProvider>
         <ChatHistoryProvider>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
+          <CheckOutProvider>
+            <BrowserRouter>
+              <App />
+            </BrowserRouter>
+          </CheckOutProvider>
         </ChatHistoryProvider>
       </CartProvider>
     </AuthContextProvider>

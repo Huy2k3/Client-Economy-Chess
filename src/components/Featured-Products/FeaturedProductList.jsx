@@ -8,7 +8,6 @@ const FeaturedProductList = () => {
 
 	const { data: featuredProducts, loading, error } = useAxios(apiUrl);
 	const featured = featuredProducts.filter((product) => product.featured === 1);
-	console.log(featuredProducts);
 	return (
 		<>
 			{loading && <h4>Loading............</h4>}

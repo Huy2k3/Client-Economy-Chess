@@ -88,7 +88,7 @@ const CartModal = ({ isOpen, onClose }) => {
               <button className="bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded mr-2" onClick={handleClose}>
                 <Link className='no-underline text-blue-950' to='/cart'>View cart</Link>
               </button>
-              <button className="bg-[#81B64C] hover:bg-[#739a4d] text-white px-4 py-2 rounded">
+              <button className="bg-[#81B64C] hover:bg-[#739a4d] text-white px-4 py-2 rounded" onClick={handleClose}>
                 <Link className='no-underline text-blue-950' to='/checkouts'>Checkout</Link>
               </button>
             </div>
